@@ -1,13 +1,146 @@
-# Loan Manager Frontend
+# Loan Manager (Community) - Assignment Submission
 
-## Setup
+## Objective
 
-1. `cd frontend`
-2. `npm install`
-3. `npm start`
+The objective of this assignment is to design and implement a RESTful API using Node.js and TypeScript to interact with a database for managing loan applications. The API should allow for handling user application data and providing real-time statistics to a dashboard, closely following the provided Figma design. The expected learning outcomes include practical experience with Node.js, TypeScript, REST API design, data modeling, and full-stack integration.
 
-## Features
+## Tech Stack
 
-- Responsive loan application form
-- Dashboard with real-time statistics
-- Connects to backend at `http://localhost:5000/api`
+- Node.js
+- Express.js (for API handling)
+- TypeScript
+- MongoDB (or any suitable database)
+- dotenv
+- React.js (for frontend integration)
+- Postman (for API testing)
+
+## Completion Instructions
+
+### Functionality
+
+#### Must Have
+- Implement RESTful API endpoints for:
+  - `POST /applications`: Submit application form data from the frontend.
+  - `GET /statistics`: Retrieve statistics for the dashboard (total applications, average loan amount, success rate, etc.).
+- Proper error handling with meaningful responses.
+- Data validation before inserting into the database.
+- Real-time dashboard updates based on submitted data.
+
+#### Nice to Have
+- API documentation using Swagger or Postman collections.
+- Deployment of the backend API to a hosting service.
+
+### Guidelines to Develop the Project
+
+#### Must Have
+- Modular code structure with separate files for routes, controllers, and database connections.
+- Proper use of async/await for handling asynchronous operations.
+- Environment variables for sensitive data like MongoDB URI.
+- Data validation for all form fields.
+
+#### Nice to Have
+- Use of TypeScript for better type safety.
+- Unit tests for API endpoints.
+
+### Submission Instructions
+
+#### Must Have
+- A zipped project directory including:
+  - `package.json`
+  - `tsconfig.json`
+  - Source code files (`.ts` or `.js`)
+  - Any other required configuration files.
+- Upload the zipped project to Google Drive (if required).
+- Share the Google Drive link for submission (if required).
+
+#### Nice to Have
+- A deployed version of the API with a link for testing.
+
+## Resources
+
+### Design Files
+- [Figma Design - Loan Manager (Community)](https://www.figma.com/file/vSeMzFkJ6RKdtflUaQvi9T/LOAN-MANAGER-(Community)?type=design&node-id=0-1&mode=design&t=61OOCgRHlv2RXuvJ-0)
+
+### APIs
+- Custom RESTful API endpoints as described above.
+
+### Third-Party Packages
+- `express` for creating the API server.
+- `mongodb` or `mongoose` for database interaction.
+- `dotenv` for environment variable management.
+
+## Deployment Links
+
+- **Frontend GitHub Repository:** [https://github.com/akhilbhumireddy/loanmanagerfrontend.git](https://github.com/akhilbhumireddy/loanmanagerfrontend.git)
+- **Frontend Live Link:** [https://akhilsloanmanager9640.netlify.app/](https://akhilsloanmanager9640.netlify.app/)
+- **Backend API (example):** [https://loanmanagerbackend-10.onrender.com](https://loanmanagerbackend-10.onrender.com)
+
+## Project Overview
+
+The Loan Manager project connects a user application form to a dashboard, focusing on backend development using Node.js and TypeScript. The backend handles user inputs, stores them in a database, and provides real-time statistics to the dashboard, following the Figma design.
+
+## Requirements
+
+### 1. Technology Stack
+- **Backend:** Node.js with TypeScript, Express.js, MongoDB (or any suitable database)
+- **Frontend:** React.js (for dashboard integration)
+
+### 2. Functional Requirements
+- **Form Integration:**
+  - The application form is connected to the backend to accept user inputs.
+  - Users can submit application forms, and their data is stored in the backend.
+- **Dashboard:**
+  - The dashboard reflects accurate statistics based on submitted data.
+  - Data in the dashboard updates dynamically as users submit applications.
+- **User Inputs:**
+  - Handle multiple users' inputs efficiently and ensure data is stored properly.
+  - Each user’s data is unique and retrievable.
+- **Statistics:**
+  - The dashboard calculates and displays statistics such as total applications, average loan amount, and application success rate in real-time, aligned with the Figma design.
+
+### 3. Design Adjustment
+- Adjustments to the Figma design are allowed for improved functionality, but no need to design the graphs. Focus is on backend development and integration.
+
+## Deliverables
+
+1. **GitHub Repository Link:**
+   - [Frontend Repository](https://github.com/akhilbhumireddy/loanmanagerfrontend.git)
+   - (Backend repository link if available)
+2. **Video Demonstration:**
+   - A screen recording demonstrating:
+     - Submitting an application through the form
+     - Data reflection in the dashboard
+     - Display of statistics generated by the backend
+3. **Live Project Link:**
+   - [Frontend Live Link](https://akhilsloanmanager9640.netlify.app/)
+   - [Backend API Live Link](https://loanmanagerbackend-10.onrender.com)
+
+## Steps to Follow
+
+1. **Backend Development:**
+   - Set up a Node.js project with TypeScript.
+   - Create REST API endpoints for form submission and statistics retrieval.
+2. **Database:**
+   - Set up a database to store application form data.
+   - Design models to store user application details.
+   - Ensure data validation for each field.
+3. **Form and Dashboard Integration:**
+   - Integrate the frontend form with the backend API.
+   - Ensure the dashboard fetches data from the backend for dynamic statistics.
+4. **Test and Debug:**
+   - Test form submission and data storage.
+   - Verify dashboard statistics update correctly.
+5. **Documentation:**
+   - Document the setup process and any assumptions or modifications.
+
+## Evaluation Criteria
+- Backend Functionality: Proper integration of the form with the backend, correct data storage and retrieval.
+- Frontend Integration: Dashboard displays statistics accurately and updates dynamically.
+- Code Structure and Cleanliness: Well-organized code with clear comments and documentation.
+- Deployment: Working live version of the application.
+- Video Demonstration: Clear demonstration of functionality.
+
+## Submission Checklist
+- [x] GitHub Link: [https://github.com/akhilbhumireddy/loanmanagerfrontend.git](https://github.com/akhilbhumireddy/loanmanagerfrontend.git)
+- [x] Video: Screen recording demonstrating the module
+- [x] Live Link: [https://akhilsloanmanager9640.netlify.app/](https://akhilsloanmanager9640.netlify.app/)
